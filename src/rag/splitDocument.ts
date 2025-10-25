@@ -16,5 +16,5 @@ export async function splitDocuments(
   return documentChunks;
 }
 
-const rawDocuments = await loadDocuments();
-await splitDocuments(rawDocuments as any);
+// const rawDocuments = await loadDocuments();
+// await splitDocuments(rawDocuments as any);

@@ -13,7 +13,7 @@ export async function createRetriever(): Promise<VectorStoreRetriever> {
 
   const pinecone = new Pinecone();
 
-  const pineconeIndex = pinecone.index("langchain-docs");
+  const pineconeIndex = pinecone.index("vector-test");
 
   const vectorStore = await PineconeStore.fromExistingIndex(embeddingLLM, {
     pineconeIndex,
